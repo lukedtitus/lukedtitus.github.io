@@ -1,0 +1,13 @@
+#nav-content{
+    margin-left: 80%;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: var(--font-1);
+}
+
+.nav-item a{
+    color: white;
+    font-family: var(--font-2);
+}

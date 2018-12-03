@@ -1,0 +1,12 @@
+:root {
+    --orange: #ff6600;
+    --white: #ffffff;
+    --black: #000000;
+    --light-blue: #0066cc;
+    --sky-blue: #66ccff;
+    --light-orange: #ff9933;
+    --grey: #808080;
+
+    --font-1: 'Quicksand', sans-serif;
+    --font-2: 'Nanum Gothic', sans-serif;
+}
