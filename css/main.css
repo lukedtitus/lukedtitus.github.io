@@ -7,14 +7,6 @@
 @import "contact.css";
 @import "footer.css";
 
-/* .jumbotron{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;	
-  }
-
-*/
 html{
   overflow: scroll;
   overflow-x: hidden;
@@ -27,26 +19,43 @@ html{
   margin-left: 20%; */
   margin: auto;
   z-index: 265;
-  position: absolute;
   color: white;
   font-family: var(--font-4);
+
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  width:50%;
+  height: 30%;
+}
+
+.header{
+  margin: auto;
+  text-align: center;
+  position: absolute;
   width: 100%;
   height: 100%;
-  text-align: center;
+  z-index: 2;
 }
 
-.text-vertical-center{
-  text-align: center;
+#foo{
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-
-    .{
+/* 
+    .header{
       z-index: 265;
       margin-left: 0%;
       height: 100%;
       width: 100%;
       margin-bottom: 0;
       color: white;
-    }
+    } */
 
     /* h1{
       position: absolute;
@@ -71,7 +80,4 @@ html{
       padding-top: 24%;
     } */
 
-    #foo{
-      z-index: 0;
-    }
 
