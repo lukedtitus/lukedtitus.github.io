@@ -121,8 +121,8 @@ button:hover {
   color: white;
 }
 
-#formbutton{
-  
+.modal{
+  font-family:'Syncopate', sans-serif;
 }
 
 #namehead2{
