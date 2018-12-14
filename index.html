@@ -7,6 +7,8 @@
         <title>Luke Titus</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >     
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Knewave|Libre+Barcode+128|MedievalSharp|Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich|Audiowide|Gruppo|Libre+Barcode+128+Text|Libre+Barcode+39+Extended+Text|Michroma|Syncopate" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Miriam+Libre|Proza+Libre" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
       </head>
       <body>
@@ -14,12 +16,145 @@
         <!--Credit and Thanks to CodePen user Mombasa for the background animation source using three.js-->
         <!--Link to original pen https://codepen.io/Mombasa/pen/mRbBVr?editors=0010 -->
           <canvas id="foo"></canvas>
+          <!-- header -->
           <div class="header">
             <div class="container text-vertical-center name">
-              <h1 style="font-size: 8em;">LUKE TITUS</h1>
-              <h3 style="font-size: 2.5em;">SOFTWARE DEVELOPER</h3>
+              <h1 id="namehead" style="font-size: 500%;">LUKE TITUS</h1>
+              <h3 id="namehead" style="font-size: 200%;">SOFTWARE DEVELOPER</h3>
+            </div>
+            <!-- buttons -->
+            <div class="buttons borderless">
+              <button type="button" class="btn" data-toggle="modal" data-target=".bd-about-modal-lg">ABOUT ME</button> |
+              <button type="button" class="btn" data-toggle="modal" data-target=".bd-projects-modal-lg">PROJECTS</button> |
+              <button type="button" class="btn" data-toggle="modal" data-target=".bd-contact-modal-lg">CONTACT</button>
             </div>
           </div>
+
+            <!-- about modal -->
+              <div class="modal fade bd-about-modal-lg" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3>About Me</h3>
+                      </div>
+                      <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa porro temporibus rem dolore eligendi voluptate repellendus amet libero harum, veritatis voluptas! Sapiente neque, porro provident architecto quia asperiores odio.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- projects modal -->
+                <div class="modal fade bd-projects-modal-lg" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3>Projects</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="..//portfolio/assets/img/webmvc.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="color:black;">ASP.NET Web Application</h5>
+                                  <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <a href="https://orchestratewebmvc.azurewebsites.net/" class="btn btn-light" target="_blank">Deployed Link</a>
+                                  <a href="https://github.com/lukedtitus/Orchestrate-Project" class="btn btn-light" target="_blank">Repository Link</a>
+                                </div>
+                              </div>
+                              <div class="card mb-3">
+                                  <img class="card-img-top" src="..//portfolio/assets/img/goldbadgechallenges.PNG" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title" style="color:black;">.NET Framework Console Applications</h5>
+                                    <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>                                    
+                                    <a href="https://github.com/lukedtitus/Gold-Badge-Challenges" class="btn btn-light" target="_blank">Repository Link</a>
+                                  </div>
+                                </div>
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="..//portfolio/assets/img/creature.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="color:black;">HTML5 / CSS3 Creature</h5>
+                                  <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <a href="https://codepen.io/lukedtitus/pen/yRrRXx?editors=1100" class="btn btn-light" target="_blank">Link to Codepen</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            <!-- contact modal -->
+                  <div class="modal fade bd-contact-modal-lg" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3>Contact</h3>
+                          </div>
+                          <div class="modal-body">
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <div class="row">
+                                        <form action="https://formspree.io/lukedtitus@gmail.com" method="POST">
+                                          <div class="control-group">
+                                            <div class="form-group">
+                                              <label>Name</label>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Your Name"
+                                                id="name"
+                                                required
+                                                data-validation-required-message="Please enter your name"
+                                                name="name"
+                                                >
+                                              <p class="help-block text-danger"></p>
+                                            </div>
+                                          </div>
+                                          <div class="control-group">
+                                            <div class="form-group">
+                                              <label>Email Address</label>
+                                              <input
+                                                type="email"
+                                                class="form-control"
+                                                placeholder="Your Email"
+                                                id="email"
+                                                required
+                                                data-validation-required-message="Please enter your email"
+                                                name="_replyto"
+                                              >
+                                              <p class="help-block text-danger"></p>
+                                            </div>
+                                          </div>
+                                          <div class="control-group">
+                                            <div class="form-group">
+                                              <textarea
+                                                class="form-control"
+                                                rows="7"
+                                                placeholder="Your Message"
+                                                id="message"
+                                                required
+                                                data-validation-required-message="Please leave a message"
+                                                name="message"
+                                              ></textarea>
+                                              <p class="help-block text-danger"></p>
+                                            </div>
+                                          </div>
+                                          <div class="text-center">
+                                            <div id="success"></div>
+                                            <button type="submit" class="btn btn-dark" id="formbutton">
+                                              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                              Send Message
+                                            </button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>          
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+            
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
