@@ -121,8 +121,20 @@ button:hover {
   color: white;
 }
 
-.modal{
+.modal h3{
   font-family:'Syncopate', sans-serif;
+}
+
+.modal-body{
+  font-family:'Syncopate', sans-serif;  
+}
+
+.aboutbody{
+  font-family: 'Maitree', serif;
+}
+
+.card{
+  font-family: 'Maitree', serif;
 }
 
 #namehead2{
