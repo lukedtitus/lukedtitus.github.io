@@ -39,6 +39,10 @@ html{
   z-index: 2;
 }
 
+.header--animate{
+  animation: fadeItIn 3s linear both 1s;
+}
+
 #foo{
   z-index: 0;
   position: fixed;
@@ -142,6 +146,16 @@ button:hover {
 font-family: 'Miriam Libre', sans-serif;
 /* font-family: 'Proza Libre', sans-serif; */
 /* font-family: 'Libre Franklin', sans-serif; */
+}
+
+@keyframes fadeItIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }
 
 /* font-family: 'Aldrich', sans-serif;
